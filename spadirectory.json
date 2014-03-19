@@ -1,0 +1,9 @@
+{"Podcasts": [
+		{"name": "Einschlafen Podcast",
+		 "schema": "einschlafenpodcast://",
+		 "feed": "http://feeds.feedburner.com/EinschlafenPodcast"},
+		{"name": "Wrint",
+		 "schema": "wrint://",
+		 "feed": "http://www.wrint.de/feed/podcast/"}
+	]
+}

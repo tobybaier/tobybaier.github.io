@@ -1,1 +1,11 @@
-## Hallo Welt
+<html>
+<head><title>Single Purpose Podcast App on iOS</title></head>
+<body>
+<h1>Single Purpose Podcast Apps on iOS</h1>
+<p>
+Since the "Podcasts" app by Apple no longer is installed by default, leading people to a podcasts iTunes Store URL does not enable them directly to subscribe to it. Users first have to install a podcatcher, then subscribe, which is cumbersome. That's why single purpose podcast apps, which have just one podcast fixed and no other option, lower the barrier for new listeners tremendously.</p>
+<p>A problem arises when such a new listener starts listening to more than one podcast: does he need a single purpose app for each of them? On Android, this problem is solved by Intents, which lets other apps know that an SPA is already installed, so that more SPAs can suggest a general podcatcher, and so that a general podcatcher can subscribed to the SPAs feeds automatically.</p>
+<p>But not so on iOS. On iOS, we need other means of inter-app-communication. This is a proposal for inter-app-communication via registered URL schemes. A single purpose podcast app registers a specific URL scheme, and has it listed in a <a href="http://tobybaier.github.io/spadirectory.json" target="_blank">global directory of SPA schemes</a>. Other SPAs and general podcatchers can read this global directoy, check for each listed URL scheme and react accordingly. Say, if another SPA finds that the device can handle one or some of the URLs from the directory, it can tell the user to install a general purpose podcatcher. That general purpose podcatcher could then automatically subscribe to those feeds. Or, the SPA could add the feeds of other SPAs to itself, turning it into a general podcatcher.</p>
+<p>If you want your SPA listed in the global directory, just initiate a pull request to <a href="https://github.com/tobybaier/tobybaier.github.io" target="_blank">tobybaier.github.io on Github</a>.</p>
+</body>
+</html>
